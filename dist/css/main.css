@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Playfair Display', serif;*/
+body{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    color: #e0e0e4;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    padding: 10px;
+    position: absolute;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+}
+nav input{
+    opacity: 0;
+}
+ul{
+    display: none;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/*Script*/
+.headhesive{
+    position: fixed;
+    background: #413269;
+    transform: translateY(-100%);
+    transition: 0.1s;
+}
+.headhesive--stick{
+    transform: translateY(0);
+}
+/**/
+.FirstLayer{
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, rgba(47, 42, 78, .9), rgba(80, 63, 118, .9)), url(background/Layer1.png);
+    background-size: cover;
+    background-position: 100% 100%;
+    text-align: center;
+}
+.FirstLayer h1{
+    margin: 20px 0px;
+}
+.FirstLayer hr{
+    width:30px;
+    size: 1;
+    color:#e0e0e4;
+}
+.FirstLayer span{
+    margin: 20px 0;
+    font-size: 20px;
+}
+button{ 
+    background: transparent;
+    color: #c6c6c9;
+    padding: 10px 0px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 120px;
+    margin: 10px auto;
+}
+.SecondLayer{
+    display: flex;
+    flex-direction: column;
+    color: #817f86;
+    align-items: center;
+    margin: 20px;
+}
+.SecondLayer img{
+    width: 40%;
+}
+.SecondLayer h1{
+    color: #413d4b;
+}
+.SecondLayer button{
+    color: #00e0d0;
+}
+.Watch{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, rgba(47, 42, 78, .9), rgba(80, 63, 118, .9)), url(background/watch.png);
+    background-size: cover;
+    background-position: 100% 100%;
+    color: #f5f4f6;
+    text-align: center;
+    padding: 80px 0;
+}
+.Watch a{
+    color: #f5f4f6;
+    font-size: 80px;
+}
+.Expertise {
+    color: #413d4b;
+    text-align: center;
+    margin: 40px 0;
+}
+.Expertise i{
+    font-size: 40px;
+    background:linear-gradient(45deg, rgba(0, 224, 208), rgba(72, 164, 204));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.Expertise hr, .Team hr{
+    size: 1;
+    width: 50px;
+}
+.Expertise__Blok{
+    padding: 20px;
+    margin: 0 20px;
+    border-bottom: 1px solid #413d4b34; 
+}
+.BorderNone1{
+    border-bottom: none;
+}
+/*Team*/
+.Team{
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, rgba(47, 42, 78, .8), rgba(80, 63, 118, .8)), url(background/Layer1.png);
+    background-size: cover;
+    background-position: 100% 100%;
+    text-align: center;
+}
+.Team__Block {
+    border: 1px solid gray;
+    margin: 20px 0;
+}
+.Team__Block img, .Works img{
+    width: 100%;
+    height: 100%;
+}
+/**/
+.Works{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #413d4b;
+    padding: 60px 20px;
+}
+.Works a{
+    color: #413d4b;
+    text-decoration: none;
+    margin: 20px 0;
+}
+.Hooks{
+    background: linear-gradient(45deg, rgba(47, 42, 78, .8), rgba(80, 63, 118, .8)), url(background/Layer1.png);
+    background-size: cover;
+    background-position: 100% 100%;
+    text-align: center;
+    padding: 20px;
+}
+.Message {
+    color: #413d4b;
+    padding: 20px;
+}
+.Message__Form input, textarea{
+  border: 1px solid #413d4b34;
+  margin: 5px 0;
+  padding: 10px;
+  width: 60%;
+}
+textarea{
+    width: 80%;
+    resize: none;
+}
+.Message__Twins{
+    display: flex;
+    flex-direction: row;
+}
+.Message__Twins img{
+    width: 90%;
+    margin: 10px 0;
+}
+footer{
+    background: linear-gradient(45deg, rgba(47, 42, 78, .7), rgba(80, 63, 118, .7)), url(background/footer.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
+    padding: 50px 15px;
+    font-size: 20px;
+    font: 20px solid white;
+}
+footer input{
+    border: 1px solid #d1cfd7;
+    margin: 5px 0;
+    padding: 10px;
+    background: transparent;
+    color: aliceblue;
+}
+footer input::-webkit-input-placeholder{
+    color: #d1cfd7;
+}
+.Contact__Button{
+    background: rgba(163, 156, 182, .4);
+    color: black;
+}
+.Contact__I i{
+    font-size: 30px;
+    margin: 10px 5px;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.Contact__I{
+    text-align: center;
+}
+@media (min-width:760px){
+    .SecondLayer{
+        flex-direction: row;
+    }
+    .SecondLayer img{
+        max-width: 250px;
+        margin: 10px;
+    }
+    .Expertise__Twins{
+        display: flex;
+        flex-direction: row;
+    }
+    .BorderNone2{
+        border-bottom: none;
+    }
+    .Team__Photo{
+        display: flex;
+        flex-direction: row;
+        margin: 50px 0;
+        
+    }
+    .Team__Block{
+        margin: 0px 10px 20px;
+    }
+    .Team__Block img{
+        width: 100%;
+        max-width: 450px;
+        height: 80%;
+    }
+    .Message{
+        display: flex;
+        flex-direction: row;
+    }
+    .Message div{
+        margin: 0 10px;
+        width: 100%;
+    }
+    .Contact{
+        display: flex;
+        flex-direction: row;
+    }
+    .Contact__Block{
+        width: 100%;
+        margin: 0 10px;
+    }
+    .Post{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media(min-width:1020px){
+    label{
+        display: none;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        font-size: 15px;
+        margin: 0;
+        padding: 10px 0;
+    }
+    li{
+        margin: 0 10px;
+    }
+    .FirstLayer{
+        padding: 250px 20px;
+    }
+    .SecondLayer div{
+        padding-left: 30px; 
+    }
+    .Expertise__All{
+        display: flex;
+        flex-direction: row;
+    }
+    .Expertise__Twins{
+        display: flex;
+        flex-direction: column;
+    }
+    .Expertise__Blok{
+        height: 100%;
+    }
+    .Expertise__Twins:nth-child(2){
+        border: 1px solid black;
+    }
+}
