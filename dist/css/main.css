@@ -29,7 +29,7 @@ h1{
 }
 a{
     text-decoration: none;
-    color: white;
+    color: #e0e0e4;
 }
 /*Script*/
 .headhesive{
@@ -103,9 +103,13 @@ button{
     font-size: 80px;
 }
 .Expertise {
+    display: flex;
+    flex-direction: column;
     color: #413d4b;
     text-align: center;
     margin: 40px 0;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 .Expertise i{
     font-size: 40px;
@@ -120,10 +124,6 @@ button{
 .Expertise__Blok{
     padding: 20px;
     margin: 0 20px;
-    border-bottom: 1px solid #413d4b34; 
-}
-.BorderNone1{
-    border-bottom: none;
 }
 /*Team*/
 .Team{
@@ -156,6 +156,9 @@ button{
     text-decoration: none;
     margin: 20px 0;
 }
+.Works img{
+    max-width: 500px;
+}
 .Hooks{
     background: linear-gradient(45deg, rgba(47, 42, 78, .8), rgba(80, 63, 118, .8)), url(background/Layer1.png);
     background-size: cover;
@@ -163,9 +166,15 @@ button{
     text-align: center;
     padding: 20px;
 }
+.Hooks div{
+    max-width: 1024px;
+    margin: 0 auto;
+}
 .Message {
     color: #413d4b;
     padding: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 .Message__Form input, textarea{
   border: 1px solid #413d4b34;
@@ -217,6 +226,9 @@ footer input::-webkit-input-placeholder{
 .Contact__I{
     text-align: center;
 }
+.Post a{
+    margin-right: 15px; 
+}
 @media (min-width:760px){
     .SecondLayer{
         flex-direction: row;
@@ -225,18 +237,17 @@ footer input::-webkit-input-placeholder{
         max-width: 250px;
         margin: 10px;
     }
-    .Expertise__Twins{
+    .Expertise__Col{
         display: flex;
-        flex-direction: row;
     }
-    .BorderNone2{
-        border-bottom: none;
+    .Expertise__Blok{
+        margin: 0;
     }
     .Team__Photo{
         display: flex;
         flex-direction: row;
         margin: 50px 0;
-        
+        justify-content: center;
     }
     .Team__Block{
         margin: 0px 10px 20px;
@@ -269,6 +280,9 @@ footer input::-webkit-input-placeholder{
     }
 }
 @media(min-width:1020px){
+    header{
+        padding: 20px 5%;
+    }
     label{
         display: none;
     }
@@ -283,10 +297,22 @@ footer input::-webkit-input-placeholder{
         margin: 0 10px;
     }
     .FirstLayer{
-        padding: 250px 20px;
+        padding: 250px 20%;
+    }
+    .SecondLayer{
+        padding: 100px 15%;
     }
     .SecondLayer div{
         padding-left: 30px; 
+    }
+    .Watch{
+        padding: 150px 0;
+    }
+    .Team__Twins{
+        display: flex;
+    }
+    .Team__Block h3{
+        margin: 10px;
     }
     .Expertise__All{
         display: flex;
@@ -297,9 +323,7 @@ footer input::-webkit-input-placeholder{
         flex-direction: column;
     }
     .Expertise__Blok{
-        height: 100%;
-    }
-    .Expertise__Twins:nth-child(2){
-        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
     }
 }
